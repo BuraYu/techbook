@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap");
+
+/* Colors and Variables*/
+
+:root {
+  --neutral900: #062630;
+  --neutral700: #385159;
+  --neutral200: #e6e1df;
+  --neutral100: #faf5f3;
+  --neutral0: #fff;
+
+  --lightSalmon500: #fea36f;
+  --lightSalmon100: #ffe2d1;
+  --lightSalmon50: #fff5ef;
+
+  --textGradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+
+  --martian: "Martian Mono", monospace;
+  --inter: "Inter", sans-serif;
+}
+
+/* Fonts */
+.text-preset-1 {
+  font-size: 3.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.125rem;
+  font-family: var(--martian);
+  font-weight: 700;
+}
+
+.text-preset-2 {
+  font-size: 3.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.125rem;
+  font-family: var(--martian);
+  font-weight: 600;
+}
+
+.text-preset-3 {
+  font-size: 2.125rem;
+  line-height: 1.3;
+  letter-spacing: -0.0625rem;
+  font-family: var(--martian);
+  font-weight: 600;
+}
+
+.text-preset-4 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.0625rem;
+  font-family: var(--martian);
+  font-weight: 600;
+}
+
+.text-preset-4-regular {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.0625rem;
+  font-family: var(--martian);
+  font-weight: 400;
+}
+
+.text-preset-5 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.0313rem;
+  font-family: var(--inter);
+  font-weight: 400;
+}
+
+.text-preset-5-semi-bold {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.0313rem;
+  font-family: var(--inter);
+  font-weight: 600;
+}
+
+.text-preset-6 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  letter-spacing: -0.0625rem;
+  font-family: var(--martian);
+  font-weight: 600;
+}
+
+.text-preset-7 {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem;
+  font-family: var(--martian);
+  font-weight: 400;
+}
+
+@media (max-width: 375px) {
+  .text-preset-1 {
+    font-size: 2.375rem;
+    line-height: 1.2;
+    letter-spacing: -0.125rem;
+    font-family: var(--martian);
+    font-weight: 700;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .text-preset-2 {
+    font-size: 2.125rem;
+    line-height: 1.3;
+    letter-spacing: -0.125rem;
+    font-family: var(--martian);
+    font-weight: 600;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-preset-3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.0625rem;
+    font-family: var(--martian);
+    font-weight: 600;
+  }
+
+  .text-preset-6 {
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.0625rem;
+    font-family: var(--martian);
+    font-weight: 600;
   }
 }
