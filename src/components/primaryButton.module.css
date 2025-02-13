@@ -1,0 +1,21 @@
+.p_button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-color: var(--neutral900);
+  border-style: solid;
+  background: linear-gradient(90deg, var(--lightSalmon50), transparent)
+    var(--lightSalmon50);
+  padding: 20px 24px;
+  border-radius: 8px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.p_button_container:hover {
+  background-color: var(--lightSalmon100);
+}
+
+span {
+  text-transform: uppercase;
+}

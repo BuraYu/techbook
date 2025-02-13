@@ -1,0 +1,22 @@
+.p_button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  border-color: var(--neutral0);
+  border-style: solid;
+  background: linear-gradient(270deg, var(--neutral900), transparent)
+    var(--neutral900);
+  padding: 20px 24px;
+  border-radius: 8px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.p_button_container:hover {
+  background-color: var(--neutral700);
+}
+
+span {
+  text-transform: uppercase;
+}
