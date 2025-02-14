@@ -1,15 +1,12 @@
 import "./App.css";
-import AlternateButton from "./components/AlternateButton";
 import Hero from "./components/Hero";
-import PrimaryButton from "./components/PrimaryButton";
+import MainContainer from "./components/MainContainer";
 
 function App() {
   return (
     <div className="App">
       <Hero />
-      
-      {/* <PrimaryButton title={"button"} />
-      <AlternateButton title={"alternate button"} /> */}
+      <MainContainer />
     </div>
   );
 }
