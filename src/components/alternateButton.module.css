@@ -17,6 +17,6 @@
   background-color: var(--neutral700);
 }
 
-span {
+.p_button_container span {
   text-transform: uppercase;
 }
