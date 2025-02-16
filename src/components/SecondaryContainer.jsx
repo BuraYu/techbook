@@ -3,6 +3,7 @@ import "../App.css";
 import styles from "./secondaryContainer.module.css";
 import notAverageReaders from "../assets/image-not-average-desktop.webp";
 import circle from "../assets/pattern-circle.png";
+import techLogos from "../assets/logos-tech.svg";
 
 const SecondaryContainer = () => {
   return (
@@ -21,6 +22,7 @@ const SecondaryContainer = () => {
           </p>
         </div>
         <img src={notAverageReaders} alt="People enjoying books" />
+        <img src={techLogos} alt="" />
       </div>
     </div>
   );
